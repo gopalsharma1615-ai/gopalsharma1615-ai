@@ -21,7 +21,7 @@ tool for physics.
 | Repo | What it is | Headline |
 |---|---|---|
 | [openai-budget-guard](https://github.com/gopalsharma1615-ai/openai-budget-guard) | Per-key, per-task token and $ budgets for OpenAI keys: preflight blocking, SQLite ledger, proxy, CLI | Atomic reservations, so concurrent calls can't overshoot; openai SDK 1.x–3.x |
-| layout-rag *(in progress)* | Layout-aware naive RAG: PDF → typography-aware chunks → hybrid retrieval → local rerank | Benchmarked on OHR-Bench and FinanceBench vs LangChain / Docling chunkers |
+| [layout-rag](https://github.com/gopalsharma1615-ai/layout-rag) | Layout-aware RAG: PDF → typography-derived heading levels → token-exact chunks → dense+BM25 → local rerank. CPU-only, no LLM | OHR-Bench page hit@5 **85.5** from raw PDFs (ground-truth-text ceiling 95.5); harness with LangChain / Docling baselines |
 | graphwalk-rag *(in progress)* | Graph RAG: build, store (NetworkX/Neo4j), and three retrievers incl. meet-in-the-middle walk | HotpotQA multi-hop, accuracy by hop vs LightRAG modes |
 | qft-renorm-ai *(in progress)* | One-loop QED renormalization in code, plus AI experiments on running couplings | Symbolic regression on PDG α_s data; LLM vs LLM+CAS on loop calculations |
 | rag-mcp-server *(in progress)* | MCP server exposing document and graph retrieval as tools for any AI client | Tool-using agent vs fixed pipeline |

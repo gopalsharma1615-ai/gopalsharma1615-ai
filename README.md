@@ -23,8 +23,9 @@ tool for physics.
 | [openai-budget-guard](https://github.com/gopalsharma1615-ai/openai-budget-guard) | Per-key, per-task token and $ budgets for OpenAI keys: preflight blocking, SQLite ledger, proxy, CLI | Atomic reservations, so concurrent calls can't overshoot; openai SDK 1.x–3.x |
 | [layout-rag](https://github.com/gopalsharma1615-ai/layout-rag) | Layout-aware RAG: PDF → typography-derived heading levels → token-exact chunks → dense+BM25 → local rerank. CPU-only, no LLM | OHR-Bench page hit@5 **85.5** from raw PDFs (ground-truth-text ceiling 95.5); harness with LangChain / Docling baselines |
 | [graphwalk-rag](https://github.com/gopalsharma1615-ai/graphwalk-rag) | Graph RAG that walks: provenance-preserving LightRAG build, NetworkX/Neo4j, bidirectional meet-in-the-middle, document-routed guided walk, single-first router | Gold-path recall **100% vs 88.6%** with **~200× fewer** candidates; router **70.2% → 76.9%** on 952 HotpotQA questions |
-| qft-renorm-ai *(in progress)* | One-loop QED renormalization in code, plus AI experiments on running couplings | Symbolic regression on PDG α_s data; LLM vs LLM+CAS on loop calculations |
-| rag-mcp-server *(in progress)* | MCP server exposing document and graph retrieval as tools for any AI client | Tool-using agent vs fixed pipeline |
+| [qft-renorm-ai](https://github.com/gopalsharma1615-ai/qft-renorm-ai) | My M.Sc. QED renormalization in code (n = 4 − ε): Z-factors, Ward identity Z₁ = Z₂, β(e) = e³/12π², tree-level cross sections; AI-for-physics experiments | Sparse regression on the RG equation rediscovers **β₀ = 11 − 2n_f/3** (asymptotic freedom lost at n_f ≈ 16.3 vs 16.5); CAS tools over MCP |
+| [rag-mcp-server](https://github.com/gopalsharma1615-ai/rag-mcp-server) | Document search and graph walks as Model Context Protocol tools for any AI assistant | Hybrid search 0.11 s p50 on CPU; entity tools < 1 ms on a 52k-node graph |
+| [research-agent](https://github.com/gopalsharma1615-ai/research-agent) *(design stage)* | Citation-verifying research agent over the MCP tools | Roadmap in README |
 
 ### Stack
 Python · PyTorch · Hugging Face · sentence-transformers · LightRAG · Neo4j · Milvus · FastAPI · Celery · Redis ·

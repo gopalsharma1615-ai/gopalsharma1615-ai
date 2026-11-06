@@ -22,7 +22,7 @@ tool for physics.
 |---|---|---|
 | [openai-budget-guard](https://github.com/gopalsharma1615-ai/openai-budget-guard) | Per-key, per-task token and $ budgets for OpenAI keys: preflight blocking, SQLite ledger, proxy, CLI | Atomic reservations, so concurrent calls can't overshoot; openai SDK 1.x–3.x |
 | [layout-rag](https://github.com/gopalsharma1615-ai/layout-rag) | Layout-aware RAG: PDF → typography-derived heading levels → token-exact chunks → dense+BM25 → local rerank. CPU-only, no LLM | OHR-Bench page hit@5 **85.5** from raw PDFs (ground-truth-text ceiling 95.5); harness with LangChain / Docling baselines |
-| graphwalk-rag *(in progress)* | Graph RAG: build, store (NetworkX/Neo4j), and three retrievers incl. meet-in-the-middle walk | HotpotQA multi-hop, accuracy by hop vs LightRAG modes |
+| [graphwalk-rag](https://github.com/gopalsharma1615-ai/graphwalk-rag) | Graph RAG that walks: provenance-preserving LightRAG build, NetworkX/Neo4j, bidirectional meet-in-the-middle, document-routed guided walk, single-first router | Gold-path recall **100% vs 88.6%** with **~200× fewer** candidates; router **70.2% → 76.9%** on 952 HotpotQA questions |
 | qft-renorm-ai *(in progress)* | One-loop QED renormalization in code, plus AI experiments on running couplings | Symbolic regression on PDG α_s data; LLM vs LLM+CAS on loop calculations |
 | rag-mcp-server *(in progress)* | MCP server exposing document and graph retrieval as tools for any AI client | Tool-using agent vs fixed pipeline |
 

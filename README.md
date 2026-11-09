@@ -2,6 +2,8 @@
 
 **Senior Data Scientist · RAG / GraphRAG · LLM systems · M.Sc. Physics (NIT Calicut)**
 
+🔎 **[Ask my knowledge graph →](https://gopalsharma1615-ai.github.io/portfolio/)** a live demo where a meet-in-the-middle search walks a Qwen3-built graph of my work, in your browser.
+
 I build retrieval and reasoning systems that hold up under measurement: layout-aware document RAG, knowledge-graph
 multi-hop QA, and the evaluation harnesses that keep them honest. Before ML, I trained as a physicist
 (CSIR-UGC NET AIR 81, IIT JAM AIR 469); my M.Sc. project was on renormalization in QED, and I still use AI as a
@@ -25,6 +27,7 @@ tool for physics.
 | [graphwalk-rag](https://github.com/gopalsharma1615-ai/graphwalk-rag) | Graph RAG that walks: provenance-preserving LightRAG build, NetworkX/Neo4j, bidirectional meet-in-the-middle, document-routed guided walk, single-first router | Gold-path recall **100% vs 88.6%** with **~200× fewer** candidates; router **70.2% → 76.9%** on 952 HotpotQA questions |
 | [qft-renorm-ai](https://github.com/gopalsharma1615-ai/qft-renorm-ai) | My M.Sc. QED renormalization in code (n = 4 − ε): Z-factors, Ward identity Z₁ = Z₂, β(e) = e³/12π², tree-level cross sections; AI-for-physics experiments | Sparse regression on the RG equation rediscovers **β₀ = 11 − 2n_f/3** (asymptotic freedom lost at n_f ≈ 16.3 vs 16.5); CAS tools over MCP |
 | [rag-mcp-server](https://github.com/gopalsharma1615-ai/rag-mcp-server) | Document search and graph walks as Model Context Protocol tools for any AI assistant | Hybrid search 0.11 s p50 on CPU; entity tools < 1 ms on a 52k-node graph |
+| [portfolio](https://github.com/gopalsharma1615-ai/portfolio) | This site: in-browser knowledge-graph demo (transformers.js + JS graph search) | Search over 892 entities in ~4 ms, no backend |
 | [research-agent](https://github.com/gopalsharma1615-ai/research-agent) *(design stage)* | Citation-verifying research agent over the MCP tools | Roadmap in README |
 
 ### Stack
